@@ -98,7 +98,7 @@
     line-height: 1;
   }
 
-  .lw-accent { color: #6873f2; }
+  .lw-accent { color: #ffffff; }
   .lw-white { color: var(--fg); }
   .logo-wordmark-UNUSED {
     color: var(--accent-blue);
@@ -166,14 +166,26 @@
     font-size: clamp(14px, 3.5vw, 17px);
     font-weight: 500;
     font-style: italic;
-    line-height: 1.6;
-    color: #ffffff;
-    background: #6873f2;
-    display: inline-block;
-    padding: 6px 14px;
-    border-radius: 6px;
+    line-height: 2;
+    color: inherit;
+    background: none;
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    max-width: 520px;
     max-width: 480px;
     margin: 0 0 36px 0;
+  }
+
+  .sub-highlight {
+    display: inline;
+    background: #6873f2;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 0;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    box-shadow: 5px 5px 0 rgba(235, 235, 235, 0.35);
   }
 
   .cta-wrap {
@@ -190,8 +202,8 @@
     color: var(--fg);
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 12px 20px;
-    border-radius: 6px;
+    padding: 8px 18px;
+    border-radius: 100px;
     text-decoration: none;
     letter-spacing: 0.01em;
     transition: background 0.2s, border-color 0.2s;
@@ -357,10 +369,13 @@
     }
     .sub {
       font-size: 16px !important;
-      line-height: 1.6 !important;
-      color: rgba(255, 255, 255,0.8) !important;
+      line-height: 2 !important;
       max-width: 100% !important;
       margin-bottom: 28px !important;
+    }
+    .sub-highlight {
+      font-size: 16px !important;
+      padding: 3px 10px !important;
     }
     .cta-mail {
       font-size: 16px !important;
@@ -427,14 +442,14 @@
   <path class="cls-2" d="m60.6 38.7c-3.5 0.5-6.4 0.8-10.6 0.8-3.4 0-6.4-0.2-10-0.8-2.6 3.3-4 6.9-5.2 9.9 0.7 4.8 2.3 10.8 5.8 14.3 0.7-0.5 1.8-1.2 3.4-0.9 1.6 0.2 3.6 0.5 6 0.5 2.2 0 4-0.3 6.1-0.5 1.3-0.1 2.6 0.2 3.3 0.9 2.7-3 4.9-8 5.9-14.3-0.7-3-2.4-7.2-4.7-9.9z"/>
 </svg>
     </div>
-      <div class="logo-wordmark"><span class="lw-accent">LOUDER.</span><span class="lw-white">cloud</span></div>
+      <div class="logo-wordmark">LOUDER.</div>
     </div>
 
     <!-- Hero text -->
     <div class="hero">
       <div class="tag">coming soon</div>
-      <h1>The music was always there.<br>Now it's on <em class="h1-loud">LOUDER.</em><span class="h1-cloud">cloud</span></h1>
-      <p class="sub">Your new community and discovery platform for FINTA* in music.</p>
+      <h1>The music was always there.<br>Now it's on <em class="h1-loud">LOUDER.</em></h1>
+      <p class="sub"><span class="sub-highlight">LOUDER.cloud – your new community and discovery platform for FINTA* in music</span></p>
       <div class="cta-wrap">
         <a href="mailto:hi@louder.cloud" class="cta-mail">hi@louder.cloud</a>
       </div>
